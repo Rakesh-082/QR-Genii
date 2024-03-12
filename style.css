@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Truculenta',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #F0F3FF;  
+}
+
+.container{
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #333A73 ;
+    border-radius: 40px;
+}
+
+
+.container p{
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #F8F4EC;
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 40px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.2) , -5px -5px 10px rgba(240, 243, 255,0.1);
+    background:rgba(56, 122, 223,20%) ;
+    color: #F0F3FF;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+input:hover{
+    transform: translate(5px);
+    box-shadow: 2px 2px 30px rgba(240, 243, 255,0.3);
+}
+
+
+.container button{
+    width: 150px;
+    height: 50px;
+    border-radius: 40px;
+    color: #F0F3FF;
+    border: none;
+    outline: none;
+    margin: 6px;
+}
+
+#download{
+    background-color:#50C4ED;
+    box-shadow: -3px -3px 25px rgba(80, 196, 237,0.2) , 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+#download:hover{
+    transform: translate(5px);
+    box-shadow: 2px 2px 30px rgba(240, 243, 255,0.3);
+}
+
+
+#generate{
+    background-color:#FBA834 ;
+    box-shadow: -3px -3px 25px rgba(251, 168, 52,0.2) , 10px 10px 5px rgba(0, 0, 0, 0.2) ;
+}
+
+#generate:hover{
+    transform: translate(5px);
+    box-shadow: 2px 2px 30px rgba(240, 243, 255,0.3);
+}
+
+#imgBox{
+    width: 200px;
+    border-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in;
+    mix-blend-mode:lighten;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+#imgBox img{
+   width: 100%;
+   padding: 10px; 
+}
+
+#imgBox.show-img{
+    max-height: 300px ;
+    margin: 10px auto;
+    border: none;
+    border-radius: 10px;
+} 
+
+.error{
+    animation: shake 0.1s linear 10 ;
+}
+
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}

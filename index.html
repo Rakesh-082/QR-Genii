@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Ojuju:wght@200..800&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="container">
+        <p>Enter your text or URL</p>
+        <input type="text" placeholder="Text or URL" id="qrText">
+        <div id="imgBox">
+            <img src="" id="qrImage">
+        </div>
+        <button id="download" download="QR-Code.png">Download</button>
+        <button id="generate" onclick="generateQR()">Generate</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
